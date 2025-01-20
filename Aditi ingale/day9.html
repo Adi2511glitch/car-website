@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediaquery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+<!---Cards and the media query-->
+    <div class="card-container">
+        <div class="card">
+          <img src="https://www.shutterstock.com/shutterstock/photos/2485140641/display_1500/stock-photo-manager-shakes-hands-with-robot-standing-near-business-center-male-thanks-artificial-intelligence-2485140641.jpg" alt="Card Image">
+          <div class="card-body">
+            <h3>Human-Robot Collaboration</h3>
+            <p>Robots are no longer just tools; they are becoming partners in industries ranging from healthcare to manufacturing. These robots work alongside humans to enhance productivity, safety, and innovation. 
+                Collaborative robots (cobots) can learn and adapt, creating a future where human creativity and robotic precision combine seamlessly.</p>
+          </div>
+        </div>
+    
+        <div class="card">
+          <img src="https://www.shutterstock.com/shutterstock/photos/753767836/display_1500/stock-photo-waiter-hand-holding-an-empty-digital-tablet-with-smart-city-with-smart-services-and-icons-internet-753767836.jpg" alt="Card Image">
+          <div class="card-body">
+            <h3>Smart Cities of Tomorrow</h3>
+            <p> Smart cities leverage IoT, AI, and sustainable technologies to improve urban living. Autonomous vehicles reduce traffic congestion and accidents, while drones assist in logistics and emergency services.
+                These cities prioritize eco-friendly infrastructure, energy efficiency, and seamless connectivity to make life smarter and more sustainable.</p>
+          </div>
+        </div>
+    
+        <div class="card">
+          <img src="https://www.shutterstock.com/shutterstock/photos/2285004779/display_1500/stock-vector-artificial-intelligence-in-humanoid-head-generative-bot-for-creating-ideas-editing-searching-for-2285004779.jpg" alt="Card Image">
+          <div class="card-body">
+            <h3>AI-Driven Smartphone Applications</h3>
+            <p>Smartphones powered by artificial intelligence are transforming the way we interact with technology. From voice-activated personal assistants to apps that predict our needs, AI enhances convenience, accessibility, and efficiency. 
+                This innovation allows for smarter communication, better navigation, and personalized user experiences.</p>
+          </div>
+        </div>
+      </div>
+      <style>
+        /* Styling the cards */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.card-body p {
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+  .card-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .card {
+      width: 100%;
+      max-width: 400px;
+  }
+
+  .card img {
+      height: 150px; 
+  }
+}
+        </style>
+    
+
+</body>
+</html>
